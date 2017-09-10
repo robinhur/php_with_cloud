@@ -16,6 +16,7 @@ if (!isset($member[$_GET['user_id']])) {
             history.back();
             </script>
             ";
+    exit;
 }
 
 if ($member[$user_id]['pw'] != $user_pw) {
@@ -24,8 +25,12 @@ if ($member[$user_id]['pw'] != $user_pw) {
             history.back();
             </script>
             ";
+    exit;
 }
 
+setcookie('user_id', $user_id, time() + 600 , '/');
+setcookie('user_pw', $user_pw, time() + 600 , '/' );
 
+echo '쿠키 생성 완료';
 
 ?>
