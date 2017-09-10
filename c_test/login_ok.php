@@ -1,3 +1,4 @@
+<meta charset="utf-8" />
 <?php
 $member = array(
                 'user1' => array('pw' => 'ppp1', 'name' => 'NO1'),
