@@ -30,7 +30,6 @@ if ($member[$user_id]['pw'] != $user_pw) {
 
 setcookie('user_id', $user_id, time() + 600 , '/');
 setcookie('user_pw', $user_pw, time() + 600 , '/' );
-
-echo '쿠키 생성 완료';
-
 ?>
+
+<meta http-equiv='refresh' content='0;url=main.php>
