@@ -28,8 +28,8 @@ if ($member[$user_id]['pw'] != $user_pw) {
     exit;
 }
 
-setcookie('user_id', $user_id, time() + 600 , '/');
-setcookie('user_pw', $user_pw, time() + 600 , '/' );
+setcookie('user_id', $user_id, time() + 10 , '/');
+setcookie('user_pw', $user_pw, time() + 10 , '/' );
 ?>
 
 <meta http-equiv='refresh' content='0;url=main.php'>
