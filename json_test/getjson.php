@@ -3,7 +3,6 @@
 
 <?php
 	
-	echo getenv("SERVER_IP");
 	$link = mysqli_connect("localhost", "root", "root", "db");
 	
 	if (!$link) {
