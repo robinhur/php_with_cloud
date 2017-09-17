@@ -17,8 +17,8 @@
 	echo $sql_query;
 	
 	$raw_result = mysqli_query($link, $sql_query);
-	echo $raw_result;
-	echo "<br>";
+	#echo $raw_result;
+	#echo "<br>";
 	
 	$result_array = array();
 	if ($raw_result) {
@@ -38,6 +38,9 @@
 		
 		echo print_r($result_array);
 		
+	} else {
+		echo "SQL query run error";
+		echo mysqli_error($link);
 	}
 	
 	
