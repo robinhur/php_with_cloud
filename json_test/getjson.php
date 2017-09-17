@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<meta charset="utf-8" />
-
 <?php
 	
 	$link = mysqli_connect("localhost", "root", "root", "db");
@@ -32,9 +29,13 @@
 		}
 
 		
-		echo "<pre>"; 
-		print_r($result_array);
-		echo "</pre>";
+		#echo "<pre>"; 
+		#print_r($result_array);
+		#echo "</pre>";
+		
+		header('Content-Type: application/json; charset=utf8');
+		$json = json_encode(array("webnautes"=>$result_array), JSON_PRETTY_PRINT+JSON_UNESCAPED_UNICODE);
+		echo $json
 		
 	} else {
 		echo "SQL query run error";
