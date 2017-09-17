@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
 
 <?php
 	
@@ -17,8 +19,8 @@
 	echo $sql_query;
 	
 	$raw_result = mysqli_query($link, $sql_query);
-	#echo $raw_result;
-	#echo "<br>";
+	echo (string)$raw_result;
+	echo "<br>";
 	
 	$result_array = array();
 	if ($raw_result) {
