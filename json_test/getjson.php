@@ -34,7 +34,7 @@
 		#echo "</pre>";
 		
 		header('Content-Type: application/json; charset=utf-8');
-		$json = json_encode(array("result"=>$result_array), JSON_PRETTY_PRINT+JSON_UNESCAPED_UNICODE);
+		$json = json_encode(array("result"=>$result_array), JSON_UNESCAPED_UNICODE+JSON_PRETTY_PRINT);
 		echo $json;
 		
 	} else {
