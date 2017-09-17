@@ -34,8 +34,8 @@
 		#echo "</pre>";
 		
 		header('Content-Type: application/json; charset=utf8');
-		$json = json_encode(array("webnautes"=>$result_array), JSON_PRETTY_PRINT+JSON_UNESCAPED_UNICODE);
-		echo $json
+		$json = json_encode(array("result"=>$result_array), JSON_UNESCAPED_UNICODE);
+		echo $json;
 		
 	} else {
 		echo "SQL query run error";
