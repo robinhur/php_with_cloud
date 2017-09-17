@@ -11,12 +11,10 @@
 		exit();
 	}
 	
-	echo "MySQL connected ";
 	mysqli_set_charset($link,"utf8");
-	
-	
+
+
 	$sql_query = "select * from Person";
-	echo $sql_query;
 	
 	$raw_result = mysqli_query($link, $sql_query);
 	
@@ -32,9 +30,7 @@
 						)
 			);
 		}
-		
-		echo $result_array;
-		echo "<br>";
+
 		
 		echo print_r($result_array);
 		
