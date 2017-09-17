@@ -32,7 +32,9 @@
 		}
 
 		
-		echo print_r($result_array);
+		echo "<pre>"; 
+		print_r($result_array);
+		echo "</pre>";
 		
 	} else {
 		echo "SQL query run error";
