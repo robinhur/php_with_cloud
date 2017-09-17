@@ -19,8 +19,6 @@
 	echo $sql_query;
 	
 	$raw_result = mysqli_query($link, $sql_query);
-	echo (string)$raw_result;
-	echo "<br>";
 	
 	$result_array = array();
 	if ($raw_result) {
