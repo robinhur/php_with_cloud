@@ -16,6 +16,7 @@
 	
 	
 	$sql_query = "select * from Person";
+	echo $sql_query;
 	
 	$raw_result = mysqli_query($link, $sql_query);
 	echo $raw_result;
