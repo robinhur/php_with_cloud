@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<meta charset="utf-8" />
 
 <?php
 	
 	$link = mysqli_connect("localhost", "root", "root", "db");
 	
 	if (!$link) {
-		echo "MySQL 접속 에러 : ";
+		echo "MySQL connection error : ";
 		echo mysqli_connect_error();
 		exit();
 	}
 	
-	echo "MySQL 접속 완료";
+	echo "MySQL connected ";
 	mysqli_set_charset($link,"utf8");
 	
 	
