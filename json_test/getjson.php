@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+
 <?php
 	
 	$link = mysqli_connect("localhost", "root", "root", "db");
