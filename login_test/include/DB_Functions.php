@@ -78,6 +78,7 @@ class DB_Functions {
                 return $user;
             }
         } else {
+            echo "FAILED";
             return NULL;
         }
     }
