@@ -60,6 +60,10 @@ class DB_Functions {
  
         $stmt->bind_param("s", $email);
  
+        echo $email;
+        echo $password;
+        echo $stmt;
+
         if ($stmt->execute()) {
             $user = $stmt->get_result()->fetch_assoc();
             $stmt->close();

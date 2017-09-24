@@ -13,9 +13,7 @@ if (isset($_GET['email']) && isset($_GET['password'])) {
  
     // get the user by email and password
     $user = $db->getUserByEmailAndPassword($email, $password);
- 
-    echo $user;
-
+    
     if ($user != false) {
         // use is found
         $response["error"] = FALSE;
