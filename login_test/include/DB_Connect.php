@@ -5,9 +5,6 @@ class DB_Connect {
     // Connecting to database
     public function connect() {
         require_once 'Config.php';
-
-        echo "aaaaa";
-        echo DB_HOST;
          
         // Connecting to mysql database
         $this->conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
@@ -16,9 +13,4 @@ class DB_Connect {
         return $this->conn;
     }
 }
- 
-$db = new Db_Connect();
-$db->connect();
-echo "Asdf";
-
 ?>
