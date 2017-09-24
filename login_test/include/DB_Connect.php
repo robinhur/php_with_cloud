@@ -4,7 +4,7 @@ class DB_Connect {
  
     // Connecting to database
     public function connect() {
-        require_once 'include/Config.php';
+        require_once 'Config.php';
 
         echo DB_HOST;
          
@@ -16,4 +16,6 @@ class DB_Connect {
     }
 }
  
+$db = new Db_Connect();
+
 ?>
