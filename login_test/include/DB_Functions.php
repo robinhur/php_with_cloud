@@ -63,7 +63,7 @@ class DB_Functions {
 
         if ($result) {
             echo "zzzzz";
-            $user = $stmt->get_result()->fetch();
+            $user = $stmt->fetch();
             $stmt->close();
  
             echo "ggggg";
