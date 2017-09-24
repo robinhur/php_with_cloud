@@ -6,6 +6,7 @@ class DB_Connect {
     public function connect() {
         require_once 'Config.php';
 
+        echo "aaaaa";
         echo DB_HOST;
          
         // Connecting to mysql database
@@ -17,5 +18,6 @@ class DB_Connect {
 }
  
 $db = new Db_Connect();
+echo "Asdf";
 
 ?>
