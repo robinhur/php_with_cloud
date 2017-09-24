@@ -59,10 +59,6 @@ class DB_Functions {
         $stmt = $this->conn->prepare("SELECT * FROM users WHERE email = ?");
  
         $stmt->bind_param("s", $email);
- 
-        echo $email;
-        echo $password;
-        echo $stmt;
 
         if ($stmt->execute()) {
             $user = $stmt->get_result()->fetch_assoc();
@@ -73,12 +69,19 @@ class DB_Functions {
             $encrypted_password = $user['encrypted_password'];
             $hash = $this->checkhashSSHA($salt, $password);
             // check for password equality
+
+            
+ 
+            echo $user;
+            echo $salt;
+            echo $hash;
+
+
             if ($encrypted_password == $hash) {
                 // user authentication details are correct
                 return $user;
             }
         } else {
-            echo "FAILED";
             return NULL;
         }
     }
