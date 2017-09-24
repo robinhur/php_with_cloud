@@ -18,6 +18,7 @@ class DB_Connect {
 }
  
 $db = new Db_Connect();
+$db->connect();
 echo "Asdf";
 
 ?>
